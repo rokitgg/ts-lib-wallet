@@ -11,4 +11,15 @@ watch-dir
 node_modules/
 jspm_packages/
 
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
 
