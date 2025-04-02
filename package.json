@@ -18,7 +18,7 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:types": "tsc -p tsconfig.json --emitDeclarationOnly",
-    "build:web": "npx webpack --config webpack.config.js",
+    "build:web": "npx webpack --config webpack.config.cjs",
     "test": "brittle ./test/*.test.js",
     "test:hdwallet": "brittle ./test/hdwallet.test.js",
     "test:currency": "brittle ./test/currency.test.js",
