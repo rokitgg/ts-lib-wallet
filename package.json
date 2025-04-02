@@ -15,9 +15,9 @@
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && npm run build:types && npm run build:web",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build:esm": "tsc --module es2020 --outDir dist/esm",
-    "build:types": "tsc --declaration --declarationDir dist/types --emitDeclarationOnly",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.json --emitDeclarationOnly",
     "build:web": "npx webpack --config webpack.config.js",
     "test": "brittle ./test/*.test.js",
     "test:hdwallet": "brittle ./test/hdwallet.test.js",
